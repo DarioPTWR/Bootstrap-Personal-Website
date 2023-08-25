@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/* Header Styles */
+#navbar {
+    font-family: 'Fredoka One';
+    font-size: 30px;
+}
+
+#logo_img {
+    height: 100px;
+}
+
+/*Gallery Header Styles*/
+
+#bg-image {
+    background-image: url("../CA2_GRAPHICS/galleryTopImg.jpg");
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    filter: saturate(140%) contrast(120%); 
+}
+
+h1 {
+    font-family: 'Alfa Slab One';
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-shadow: 6px 2px rgb(255, 255, 255);
+}
+
+/*Image Gallery*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-hover-zoom > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.column{
+    flex: 25%;
+}
+
+.img-hover-zoom{
+    height: auto;
+    overflow: hidden;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.img-hover-zoom img{
+    vertical-align: middle;
+    transition:  transform .7s ease-in;
+}
+
+.img-hover-zoom:hover img{
+    transform: rotateZ(30deg) rotateY(20deg);
+}
+
+/*3 column layout -> 1 column layout*/
+@media screen and (max-width: 1000px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Scroll to Top Button Styles */
+
+#topBtn {
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  float: right;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  font-family: "Alfa Slab One";
+  height: 48px;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+#topBtn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+#topBtn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#topBtn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* Footer Styles */
+
+#footer-text {
+    font-family: 'Raleway';
+}
+
+#footer-titles1, #footer-titles2 {
+    font-family: 'Alfa Slab One';
+}
+
+/* Logo Footer Styles */
+
+/* Style the icon bar links */
+.socialmedia_logos a {
+    text-align: center;
+    padding: 16px;
+    margin-left: 20px;
+    transition: all 0.5s ease-in;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+  }
+  
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+.instagram {
+   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+   color: white; 
+}
+
+/* Footer Link Styles */
+
+a {
+    color: white;
+}
+    
+a:hover {
+    color: rgb(186, 107, 107);
+}  
+
+.linkPages > ul {
+    font-family: 'Raleway';
+    font-size: large;
+}
+
+.contactInfo > ul > li {
+    font-family: 'Raleway';
+    font-size: 18px;
+}
+

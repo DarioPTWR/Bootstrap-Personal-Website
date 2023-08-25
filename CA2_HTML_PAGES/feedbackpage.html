@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Feedback Form HTML
+    Author: DarioTeh
+    Date:   18/7/2022
+    
+    Filename: feedbackpage.html-->
+
+<!--Source Attribution for Graphic Use :
+    Icons/Images for All Pages - Downloaded from: https://www.flaticon.com/
+    Image of DAAA Robot (in experiencespage.html) - Downloaded from: https://www.sp.edu.sg/soc/courses/full-time-diplomas/applied-AI-and-analytics/overview
+    Other Images (Background Images) - Downloaded and Imported from Pinterest : https://www.pinterest.com/
+    Footer Icons = Downloaded from: https://fontawesome.com/start 
+    Icons for My Interests Section: https://feathericons.com/
+    Free Vector Stock Images: https://www.freepik.com/-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap-->
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--CSS-->
+        <link href="../CA2_CSS/feedbackpage.css" rel="stylesheet">
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Link to JS File-->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="../CA2_JAVASCRIPT/feedbackpage.js"></script>
+        <!-- Load font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Dario's Life At Singapore Polytechnic</title>
+        <!--google fonts - raleway, maiden orange, nova round, fredoka one-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Mochiy+Pop+One&family=Nova+Round&family=Raleway&family=Righteous&family=Sniglet:wght@800&display=swap" rel="stylesheet">
+        
+    </head>
+        
+    <body>
+      
+        <header>
+    
+        <!--Main Navigational Section ====================================================-->
+
+        <!--Align the navigation bar to the center of the screen-->
+        <div class= "align-items-start" id="navbar">
+          <nav class="navbar navbar-expand-lg bg-dark navbar-dark nav-justified">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../CA2_INDEX_HTML/index.html"><img src="../CA2_GRAPHICS/logo_name.png" class="rounded-circle" id="logo_img" alt=""></a>
+
+          <!--Clickable Links in Navigation Bar-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <!--List of navigational options that links to other pages-->
+            <ul class="navbar-nav ms-auto">
+              
+              <!--Page 1 - Index Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_INDEX_HTML/index.html"><span class="mb-0 h4">Home</span></a>
+              </li>
+
+              <!--Page 2 - Experiences Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_HTML_PAGES/experiencespage.html"><span class="mb-0 h4">Experiences</span></a>
+              </li>
+
+              <!--Page 3 - Careers Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_HTML_PAGES/careerspage.html"><span class="mb-0 h4">Careers</span></a>
+              </li>
+
+              <!--Page 4 - Feedback Response Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_HTML_PAGES/feedbackpage.html"><span class="mb-0 h4">Feedback</span></a>
+              </li>
+
+              <!--Page 5 - Gallery Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_HTML_PAGES/gallerypage.html"><span class="mb-0 h4">Gallery</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <!--Align image next to header text for feedback section-->
+  <div class="container px-5 mt-4">
+    <div class="row gx-2 align-items-center">
+
+      <div class="col">
+        <figure>
+        <img class="img-fluid" src="../CA2_GRAPHICS/feedbackImg.jpeg" alt="">
+        </figure>
+      </div>
+      
+      <div class="col">
+        <div id = "feedbackInstructions" class="d-flex align-items-center text-center text-uppercase">
+          <!--Typing Effect Words-->
+          <h1>YOUR FEEDBACK <span class="auto-input"></span></h1>
+        </div>
+      </div>
+
+    </div>  
+  </div>
+
+  <!--Feedback Instructions Text-->
+  <div id = "feedbackText" class="container d-flex justify-content-center text-center fs-5 mt-4">
+      <p>Your response will greatly help me improve my website's design and content. 
+        Your personal information will be strictly kept <strong>private</strong> and <strong>confidential</strong>.<strong>
+        I assure you, no third party will have access to your information.</strong> <em>Required fields are marked by an asterisk (*).</em>
+      </p>
+  </div>
+
+  <!--Start of Feedback Form-->
+  <form id = "feedbackForm" action="../CA2_HTML_PAGES/gallerypage.html" onsubmit="alert('Thank You For Your Submission !\nHave A Nice Day !\nDirecting You To The Photo Gallery Now ...')" method="get" class =" needs-validation px-2">
+
+  <div class="container mt-5 p-5" id="personalInfo">
+
+    <!--Feedback Input for Date, Name and Email Address-->
+    <fieldset>
+
+      <legend class="fs-3 text-center text-uppercase">Personal Information</legend>
+  
+      <div class="form-floating mb-3 mt-5">
+        <input type="date" class="form-control" id="date" name="date">
+        <label for="date">Date Of Visit</label>
+      </div>
+
+      <label class="mb-2">* Please input your name :</label>
+
+      <!--Validate Input-->
+
+      <div class="row mb-4 was-validated">
+          
+        <div class="col">
+          
+          <!--Name Input-->
+            <input type="text" class="form-control" placeholder="First Name" name="fname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Middle Name" name="name" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last Name" name="name" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          
+          <!--ReadOnly Input For Email Formatting-->
+          <div class="mt-3">
+            <input class="form-control" type="text" placeholder="E.G. : john.doe_12@gmail.com" readonly>
+          </div>
+          
+          <!--Email Input-->
+          <div class="form-floating mt-1">
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <label for="email">&nbsp;* Email Address</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field following the above format.</div>
+          </div>
+
+          <!--Mobile Number Input-->
+          <div class="form-floating mt-4">
+            <input type="tel" class="form-control" id="tel" placeholder="Enter number" name="mobile" minlength = "8" maxlength = "8" pattern = "\d{1,8}" required>
+            <label for="tel">&nbsp;* Mobile Number</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please enter a valid 8 digit mobile number.</div>
+          </div>
+
+        </div>
+    </fieldset>
+  </div>
+
+  <div class="container p-5 mt-5" id="feedback">
+    <fieldset>
+
+    <legend class="fs-3 text-center text-uppercase">Feedback Page Review</legend>
+
+    <!--Option Select--> 
+    <label class="mb-2 mt-4">* How did you come across my webpage?</label>
+    <select class="form-select form-select-md mt-2" required multiple size="2">
+      <option>Advertisements</option>
+      <option>Magazine</option>
+      <option>Social Media</option>
+      <option>Word of Mouth</option>
+      <option>Others</option>
+    </select>
+
+  <!--Number Range Selection for Interesting / Informative Webpage Qn-->
+  <div class="multiplechoice1 mt-4">
+    <label class="form-label">On a scale from 1 - 10, how interesting was the website?</label>
+    <input class="form-range" type="range" value="0" max="10" oninput= "num.value = this.value">
+    <output id="num">0</output>
+  </div>
+    
+  <div class = "mutltiplechoice2 mt-4">
+      
+    <label>Was this webpage informative?</label>
+
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Yes
+      <label class="form-check-label" for="radio1"></label>
+    </div>
+
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">No
+      <label class="form-check-label" for="radio2"></label>
+    </div>
+
+    <div class="form-check mb-3">
+      <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Neutral
+      <label class="form-check-label" for="radio3"></label>
+    </div>
+
+  </div>
+  
+  <!--Multiple Choice Rating Input-->
+  <div class="multiplechoice3 mt-4">
+
+    <label>How was your overall experience?</label><br />
+  
+    <span class="star-rating mt-2">
+      <input type="radio" name="rating1" value="1"><i></i>
+      <input type="radio" name="rating1" value="2"><i></i>
+      <input type="radio" name="rating1" value="3"><i></i>
+      <input type="radio" name="rating1" value="4"><i></i>
+      <input type="radio" name="rating1" value="5"><i></i>
+    </span>
+  </div>
+
+  <!--Drop Down Menu Option (Favourite Page in Website)-->
+
+  <!--Option Select--> 
+  <label class="mb-2 mt-3">Which page was your favourite?</label>
+  <select class="form-select form-select-md mt-2">
+    <option value="page1">Home</option>
+    <option value="page2">Experiences</option>
+    <option value="page3">Careers</option>
+    <option value="page4">Feedback</option>
+    <option value="page5">Gallery</option>
+  </select>
+        
+  <!--Feedback Text Input from User-->
+
+  <label class="mb-2 mt-3">* Please share with me any other feedback you may have.</label>
+  <div class="form-floating was-validated">
+      <textarea class="form-control mt-2" id="textfeedback" name="text" placeholder="Feedback Text" required></textarea>
+      <label>Start Typing Here . . .</label>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div> 
+  </div>
+
+  <!--Buttons for Submission and Reset-->
+
+  <div class="buttons mt-5">
+      <input onclick= "clicked(event)" class= "button p-2 text-uppercase" type="reset" value="reset">
+      <input class= "button p-2 text-uppercase" type="submit" value="submit">
+  </div>
+
+  </fieldset>
+  </div>
+ 
+</form>
+
+  <!--Scroll To Top Button-->
+  <div class = "container mt-4">
+    <button class="align-items-center px-4 d-flex justify-content-center" onclick="topFunction()" id="topBtn">Return To Top</button>
+  </div>
+
+  <footer>
+    <div class="container-fluid mt-5 pt-5 bg-dark text-white" id="footer">
+      <div class="row">
+        <!-- Single Widget-->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div>
+            <!-- Footer Text-->
+            <div id = "footer-text" class="footer-logo mb-3 mt-3 p-2 col-10">
+            <p>Thank you for viewing my personal webpage! I hope the information provided has helped you learn more about me. Please visit again!</p>
+          </div>
+          
+            <!-- Social Media Area-->
+            <div class="socialmedia_logos p-2 mb-2">
+  
+              <a href="https://www.facebook.com/darioprawarateh" class="facebook"><i class=" mx-3 fa fa-facebook"></i></a>
+              <a href="https://www.youtube.com/channel/UC5T6IALVvmIT6wAjZfqTXcQ" class="youtube"><i class=" mx-3 fa fa-youtube"></i></a>
+              <a href="https://www.instagram.com/darioprawara/" class="instagram"><i class=" mx-3 fa fa-instagram"></i></a>
+  
+            </div>
+          </div>
+        </div>
+  
+        <!-- Single Widget-->
+        <div class="col-12 col-sm-6 col-lg-4 p-2">
+          <div>
+            <!-- Widget Title-->
+            <h4 id = 'footer-titles1' class="mt-3">Dario's Webpage</h4>
+            <!-- Footer Menu-->
+            <div class="linkPages">
+              <ul class="list-unstyled">
+                <li><a class = "text-decoration-none" href="../CA2_INDEX_HTML/index.html">About Me</a></li>
+                <li><a class = "text-decoration-none" href="../CA2_HTML_PAGES/experiencespage.html">Experiences</a></li>
+                <li><a class = "text-decoration-none" href="../CA2_HTML_PAGES/careerspage.html">Careers</a></li>
+                <li><a class = "text-decoration-none" href="../CA2_HTML_PAGES/feedbackpage.html">Feedback</a></li>
+                <li><a class = "text-decoration-none" href="../CA2_HTML_PAGES/gallerypage.html">Gallery</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Single Widget-->
+      
+        <!-- Single Widget-->
+        <div class="col-12 col-sm-6 col-lg-4 p-2">
+          <div>
+            <!-- Widget Title-->
+            <h4 id = 'footer-titles2' class="mt-3">Contact</h4>
+            <!-- Footer Menu-->
+            <div class="contactInfo">
+              <ul class="list-unstyled">
+                <li>Call Me : <a class = "text-decoration-none" href="tel:+6598569966">(65) 9856 9966</a></li>
+                <li>Email Me : <a  class = "text-decoration-none" href="mailto:darioprawarawr11.22@ichat.sp.edu.sg">darioprawarawr11.22@ichat.sp.edu.sg</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>       
+
+</body>
+</html>

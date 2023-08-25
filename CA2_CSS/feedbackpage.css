@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/* Navigation Styles */
+
+/* Header Styles */
+#navbar {
+    font-family: 'Fredoka One';
+    font-size: 30px;
+
+}
+
+#logo_img {
+    height: 100px;
+}
+
+/* Feedback Styles */
+#feedbackInstructions {
+    font-family: 'Alfa Slab One';
+}
+
+#feedbackText {
+    font-family: 'Raleway';
+}
+
+form > #personalInfo, #feedback{
+    font-family: 'Raleway';
+    border: 3px solid grey;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+ }
+ 
+legend {
+    font-family: "Alfa Slab One";
+    letter-spacing: 5px; 
+}
+
+.button {
+    border: 3px solid;
+    font-family: 'Alfa Slab One';
+    float: right;
+    margin-left: 30px;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    touch-action: manipulation;
+  }
+  
+  .button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .button {
+      padding: 0.25em 0.75em;
+    }
+  }
+
+/*Star Rating System*/
+
+.star-rating {
+   white-space: nowrap;
+   display: inline-block;
+   width: 175px;
+   height: 35px;
+   overflow: hidden;
+   position: relative;
+   background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+   background-size: contain;
+ }
+ 
+ .star-rating i {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+    background-size: contain;
+  }
+
+.star-rating input {
+    opacity: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+  }
+
+.star-rating input:hover + i, .star-rating input:checked + i {
+    opacity: 1;
+}
+.star-rating i ~ i {
+    width: 40%;
+}
+.star-rating i ~ i ~ i {
+    width: 60%;
+}
+.star-rating i ~ i ~ i ~ i {
+    width: 80%;
+}
+.star-rating i ~ i ~ i ~ i ~ i {
+    width: 100%;
+}
+
+@media screen and (max-width: 568px) {
+  .col{
+      flex: 100%;
+      max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 569px) {
+  .col{
+      flex: 50%;
+      max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .col{
+      flex: 0%;
+      max-width: 100%;
+  }
+}
+
+/* Scroll to Top Button Styles */
+
+#topBtn {
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  float: right;
+  margin-top: 10px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  font-family: "Alfa Slab One";
+  height: 48px;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+#topBtn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+#topBtn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#topBtn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* Footer Styles */
+
+footer {
+  margin-top: 60px;
+}
+
+#footer-text {
+  font-family: 'Raleway';
+}
+
+#footer-titles1, #footer-titles2 {
+  font-family: 'Alfa Slab One';
+}
+
+/* Logo Footer Styles */
+
+/* Style the icon bar links */
+.socialmedia_logos a {
+  text-align: center;
+  padding: 16px;
+  margin-left: 20px;
+  transition: all 0.5s ease-in;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.instagram {
+ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+ color: white; 
+}
+
+/* Footer Link Styles */
+
+a {
+  color: white;
+}
+  
+a:hover {
+  color: rgb(186, 107, 107);
+}  
+
+.linkPages > ul {
+  font-family: 'Raleway';
+  font-size: large;
+}
+
+.contactInfo > ul > li {
+  font-family: 'Raleway';
+  font-size: 18px;
+}
+

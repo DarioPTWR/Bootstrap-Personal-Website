@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Careers Options Page HTML
+    Author: DarioTeh
+    Date:   18/7/2022
+    
+    Filename: careerspage.html-->
+
+<!--Source Attribution for Graphic Use :
+    Icons/Images for All Pages - Downloaded from: https://www.flaticon.com/
+    Image of DAAA Robot (in experiencespage.html) - Downloaded from: https://www.sp.edu.sg/soc/courses/full-time-diplomas/applied-AI-and-analytics/overview
+    Other Images (Background Images) - Downloaded and Imported from Pinterest : https://www.pinterest.com/
+    Footer Icons = Downloaded from: https://fontawesome.com/start 
+    Icons for My Interests Section: https://feathericons.com/
+    Free Vector Stock Images: https://www.freepik.com/-->
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--CSS-->
+    <link href="../CA2_CSS/careerspage.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Link to JS File-->
+    <script src="../CA2_JAVASCRIPT/careerspage.js"></script>
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dario's Life At Singapore Polytechnic</title>
+    <!--google fonts - raleway, maiden orange, nova round, fredoka one-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Mochiy+Pop+One&family=Nova+Round&family=Raleway&family=Righteous&family=Sniglet:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+    <!--Main Navigational Section ====================================================-->
+
+    <!--Align the navigation bar to the center of the screen-->
+    <div class= "align-items-start" id="navbar">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark nav-justified">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../CA2_INDEX_HTML/index.html"><img src="../CA2_GRAPHICS/logo_name.png" class="rounded-circle" id="logo_img" alt=""></a>
+
+          <!--Clickable Links in Navigation Bar-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <!--List of navigational options that links to other pages-->
+            <ul class="navbar-nav ms-auto">
+              
+              <!--Page 1 - Index Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_INDEX_HTML/index.html"><span class="mb-0 h4">Home</span></a>
+              </li>
+
+              <!--Page 2 - Experiences Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_HTML_PAGES/experiencespage.html"><span class="mb-0 h4">Experiences</span></a>
+              </li>
+
+              <!--Page 3 - Careers Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_HTML_PAGES/careerspage.html"><span class="mb-0 h4">Careers</span></a>
+              </li>
+
+              <!--Page 4 - Feedback Response Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_HTML_PAGES/feedbackpage.html"><span class="mb-0 h4">Feedback</span></a>
+              </li>
+
+              <!--Page 5 - Gallery Page-->
+              <li class="nav-item">
+                <a class="nav-link px-4 text-white" href="../CA2_HTML_PAGES/gallerypage.html"><span class="mb-0 h4">Gallery</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+    <div class = "container mt-5 pt-4">
+    <div id = "careersHeader" class = "p-5 text-dark rounded ">
+      <!-- Section heading -->
+      <p class=" p-5 pt-5 text-center d-flex justify-content-center fs-1">MY<br />CAREER OPTIONS</p>
+      <p class="text-center px-5 mx-auto w-responsive mb-5 fs-2">Here are a few of my preferred careers.</p>
+    </div>
+  </div>
+ 
+  <!--Navigational Pills to Display Relevant Career Options with a margin top mt-5-->
+
+  <div class="container mt-5">
+
+    <!-- Nav pills for toggling career options -->
+    <ul id = "careerNav" class="nav nav-pills justify-content-center nav-justified" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="pill" href="#careeroverview">Careers Overview</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#applicationdeveloper">Application Developer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#dataanalyst">Data Analyst</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#aiengineer">AI DevOps Engineer</a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+      <div id="careeroverview" class="container tab-pane active">
+        
+        <!--Align Image next to header for each career section-->
+        <div class="container d-flex justify-content-center align-items-center mt-5">
+          <figure>
+            <img class="w-100" src="../CA2_GRAPHICS/ai_logo.png" alt="">
+          </figure>
+          <h1 class="mx-4">WHAT THE FUTURE HOLDS FOR AN AI & ANALYTICS STUDENT</h1> 
+        </div>
+
+        <p class="content fs-5 mt-5"><strong>Artificial Intelligence and Analytics</strong> - a sector which undergoes constant technological advancements and innovations. No doubt, it is highly competitive and extremely demanding. Many students may have the initial interest in embarking on a journey on artificial intelligence and data analytics, but find themselves unable to cope with the rigours of the curriculum.<br /><br />Even the workforce is a competitive arena, especially in high demand jobs - such as : Software Engineers and Application Developers amongst many others. The future of an AI student is often bright with a plethora of enriching opportunties, but these opportunities would only materialise to those who are able to take advantage and seize it at the right moment.
+        </p>
+
+      </div>
+
+      <div id="applicationdeveloper" class="container tab-pane fade">
+
+        <!--Align Image next to header for each career section-->
+        <div class="container px-5">
+          <div class="row gx-2 align-items-center">
+            <div class="col">
+              <figure>
+              <img class="img-fluid" src="../CA2_GRAPHICS/applndeveloper.jpeg" alt="">
+              </figure>
+            </div>
+
+              <div class="col">
+              <div class=" header p-3 d-flex align-items-center text-center">
+                <h1>APPLICATION DEVELOPER</h1>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <!--Content Section for Application Developer-->
+        <div class="content">
+
+        <p class="fs-5 mt-3">As an <strong>Application Developer</strong>, I would be at the forefront of creating new applications as well as maintaining apps. <br /><br />Based on my research, I can conclude that the job scope is rather broad and can include building of softwares to meet client needs, as well as keeping up with the lifecycle of the application to make sure there are consistent updates to increase the performance of the application. <br /><br />Personally, I am invested in creating new softwares that can meet certain needs in the community, such as recycling apps or transport applications. One such project that I am working on involves the building of an application using JavaScript to cater to shoppers membership loyalty. <br /><br /> I chose this as one of my career pathways as I am passionate about design and the principles behind it, and want to build a software to be able to contribute positively to the society.
+        </p>
+
+        <div class="mt-5">
+          
+          <button type="button" class="button btn btn-danger p-3" data-bs-toggle="modal" data-bs-target="#modal1">
+            Click To Discover a Job Opening
+          </button>
+
+        </div>
+        
+        <!-- Modal Box Start (Appln Developer Job) -->
+        <div class="modal fade" id="modal1">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Apple Corporation Job Opening<i class=" mx-3 fa fa-apple"></i></h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><a class = "text-decoration-none" href="https://jobs.apple.com/en-sg/details/200367667/software-development-technical-lead-java?team=SFTWR">Software Development Technical Lead (Java)</a><br /><br />Be ready to make something great when you come here. Dynamic, inspiring people and innovative, industry-defining technologies are the norms at Apple. The people who work here have reinvented and defined entire industries with our products and services. The same passion for innovation also applies to our business practices - strengthening our commitment to leave the world better than we found it! We seek a self-starter, visionary person with strong leadership capabilities. To be successful, you must have a passion for quality, a knack for identifying and implementing innovative automation solutions, and a passion for collaborating with all product stakeholders to deliver quality through best practices in software development.<br /><br />- APPLE CO. , 2022<br /><br />Location : Singapore, Singapore<br /><br />Department : Software and Services<br /><br />According to Monster Data, the current estimated annual salary is around <em>$73,930 to $126,182</em> for an entry-level application developer.</p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="button btn btn-danger" data-bs-dismiss="modal">Return</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+
+      <div id="dataanalyst" class="container tab-pane fade">
+
+        <!--Align Image next to header for each career section-->
+        <div class="container px-5">
+          <div class="row gx-2 align-items-center">
+            <div class="col">
+              <figure>
+              <img class="img-fluid" src="../CA2_GRAPHICS/dataanalyst.jpeg" alt="">
+              </figure>
+            </div>
+
+              <div class="col">
+              <div class="header p-3 d-flex align-items-center text-center">
+                <h1>DATA ANALYST</h1>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <!--Content Section for Data Analyst-->
+        <div class="content">
+
+        <p class="fs-5 mt-3">Taking up the job of a Data Analyst is undoubtedly not an easy feat. As a data analyst, I understand that the job involves predicting and analysing future trends with past occurences to be used as a basis. <br /><br /><cite>Data analysts can be said to mine data to better understand the past, and use data to make assumptions about the future. Data analysts examine data sets with the intention of drawing insights about things that have happened, and presenting coherent stories through visualizations.</cite> (Jenny Scribani, LightHouse Labs). <br /><br /> Hence, being inquisitive and analytical in nature, I am very interested in studying data patterns and forming conclusions from the information gathered. Through these experiences, I aspire to effectively leverage on data analytics, coupled with machine learning algorithms to detect hidden patterns, especially for the pattern correlating to increased identity thefts.<br /><br /> To gain more knowledge in this industry, I am actively partaking in data analytics workshops and hackathons to find out about this exciting industry. <br /><br /></p>
+
+        <div class="mt-3">
+          
+          <button type="button" class="button btn btn-danger p-3" data-bs-toggle="modal" data-bs-target="#modal2">
+            Click To Discover a Job Opening
+          </button>
+
+        </div>
+        
+        <!-- Modal Box Start (Data Analyst Job) -->
+        <div class="modal fade" id="modal2">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Google Careers Job Opening<i class=" mx-3 fa fa-google"></i></h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><a class = "text-decoration-none" href="https://careers.google.com/jobs/results/79954347498054342-data-analyst-google-pay-go-deep-markets/?distance=50&hl=en_US&jlo=en_US&location=Singapore&q=data%20analyst">Data Analyst, Google Pay, Go Deep Markets</a><br /><br />Develop an understanding of core products and technologies for Google Pay across countries.
+                Partner closely with Payments leadership to setup analytics support for Google Pay across countries, determine goals, and deliver analytics at scale focused on driving growth in multiple markets. Drive visibility into performance for multiple markets by leading reviews, planning, and forecasting.<br /><br />Work closely with cross-functional teams as a lead on critical projects by independently frame-working solutions and working with complex datasets to solve non-routine analysis problems, deliver data driven insights, and shape product strategy.
+                Drive the end-to-end analytics stack on business problems, work with engineering team, and build data schemas and elements to ad-hoc insights to experimentation to optimization.<br /><br />- GOOGLE CAREERS , 2022 <br /><br />Location (Remote) : Singapore, Singapore<br /><br /> <strong> Preferred Pre-Requisites :</strong><br />Bachelor's degree in Computer Science, Mathematics, a related quantitative field, or equivalent practical experience 7 years of analytical experience working with data to identify trends and communicate insights/recommendations.<br />Experience extracting and manipulating data with SQL or other query/scripting languages.<br />Experience in market analysis, return on investment, financial modeling, and/or statistical analysis<br /><br />According to 'Towards Data Science', the current estimated annual salary is around <em>$85,312</em> at entry-level.</p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="button btn btn-danger" data-bs-dismiss="modal">Return</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div id="aiengineer" class="container tab-pane fade">
+
+        <!--Align Image next to header for each career section-->
+        <div class="container px-5">
+          <div class="row gx-2 align-items-center">
+            <div class="col">
+              <figure>
+              <img class="img-fluid" src="../CA2_GRAPHICS/aidevOps.jpeg" alt="">
+              </figure>
+            </div>
+
+              <div class="col">
+              <div class="header p-3 d-flex align-items-center text-center">
+                <h1>AI DEVOPS ENGINEER</h1>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <!--Content Section for AI DevOps Engineer-->
+        <div class="content">
+
+        <p id = "content" class="fs-5 mt-3"> Another career option I'm thoroughly interested in is being an <strong>AI DevOps Engineer</strong>. It comprises of working with both artificial intelligence and engineering of products. <br /><br />But what is it all about? I will be responsible for the designing of emerging technologies and automate such solutions using Machine Learning. Without AI, a DevOps Engineer has the sole responsibility of reviewing and validating source codes in the software and troubleshooting any programming errors. <br /><br />However, there is now greater integration of AI systems into the job of a DevOps engineer, thus softwares need to be interactive instead of remaining static. <br /><br /> As such, I'm also working towards developing the necessary skills and aptitude to meet the job requirements, such as pursuing a diploma in Applied Artificial Intelligence and spending time to pick up the principles of engineering and design to better relate to the job.</p>
+
+        <div class="mt-5">
+          
+          <button type="button" class="button btn btn-danger p-3" data-bs-toggle="modal" data-bs-target="#modal3">
+            Click To Discover a Job Opening
+          </button>
+
+        </div>
+        
+        <!-- Modal Box Start (AI DEVOPS Job) -->
+        <div class="modal fade" id="modal3">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">GovTech Job Opening<i class=" mx-3 fa fa-briefcase"></i></h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p><a class = "text-decoration-none" href="https://jobwiz.sg/job/CR-764873743?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">DevOps Engineer (Artificial Intelligence Platforms)</a><br /><br />Government Technology Agency of Singapore (GovTech) is the implementing agency of the Smart Nation and Digital Government Group under the Prime Minister's Office. As a leading centre for information communications technology and related engineering such as the Internet of Things, Data Science and Application Development, GovTech also enhances the capabilities of the Singapore Government in these domains.<br /><br />Government Technology Agency of Singapore (GovTech) is the implementing agency of the Smart Nation and Digital Government Group under the Prime Minister's Office. As a leading centre for information communications technology and related engineering such as the Internet of Things, Data Science and Application Development, GovTech also enhances the capabilities of the Singapore Government in these domains.<br /><br />- GOVTECH , 2022 <br /><br />Location : Singapore, Buona Vista, Pasir Panjang<br /><br />Department: Government & Defence<br /><br />Salary Range : $7,000 - $10,000 SGD / month</p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="button btn btn-danger" data-bs-dismiss="modal">Return</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Scroll To Top Button-->
+  <div class = "container mt-4">
+    <button class="align-items-center px-4 d-flex justify-content-center" onclick="topFunction()" id="topBtn">Return To Top</button>
+  </div>
+  
+  <footer>
+    <div class="container-fluid pt-5 bg-dark text-white" id="footer">
+      <div class="row">
+        <!-- Single Widget-->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div>
+            <!-- Footer Text-->
+            <div id = "footer-text" class="footer-logo mb-3 mt-3 p-2 col-10">
+            <p>Thank you for viewing my personal webpage! I hope the information provided has helped you learn more about me. Please visit again!</p>
+          </div>
+          
+            <!-- Social Media Area-->
+            <div class="socialmedia_logos p-2 mb-2">
+  
+              <a href="https://www.facebook.com/darioprawarateh" class="facebook"><i class=" mx-3 fa fa-facebook"></i></a>
+              <a href="https://www.youtube.com/channel/UC5T6IALVvmIT6wAjZfqTXcQ" class="youtube"><i class=" mx-3 fa fa-youtube"></i></a>
+              <a href="https://www.instagram.com/darioprawara/" class="instagram"><i class=" mx-3 fa fa-instagram"></i></a>
+  
+            </div>
+          </div>
+        </div>
+  
+        <!-- Single Widget-->
+        <div class="col-12 col-sm-6 col-lg-4 p-2">
+          <div>
+            <!-- Widget Title-->
+            <h4 id = 'footer-titles1' class="mt-3">Dario's Webpage</h4>
+            <!-- Footer Menu-->
+            <div class="linkPages">
+              <ul class="list-unstyled">
+                <li><a class = "text-decoration-none" href="../CA2_INDEX_HTML/index.html">About Me</a></li>
+                <li><a class = "text-decoration-none" href="../CA2_HTML_PAGES/experiencespage.html">Experiences</a></li>
+                <li><a class = "text-decoration-none" href="../CA2_HTML_PAGES/careerspage.html">Careers</a></li>
+                <li><a class = "text-decoration-none" href="../CA2_HTML_PAGES/feedbackpage.html">Feedback</a></li>
+                <li><a class = "text-decoration-none" href="../CA2_HTML_PAGES/gallerypage.html">Gallery</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Single Widget-->
+      
+        <!-- Single Widget-->
+        <div class="col-12 col-sm-6 col-lg-4 p-2">
+          <div>
+            <!-- Widget Title-->
+            <h4 id = 'footer-titles2' class="mt-3">Contact</h4>
+            <!-- Footer Menu-->
+            <div class="contactInfo">
+              <ul class="list-unstyled">
+                <li>Call Me : <a class = "text-decoration-none" href="tel:+6598569966">(65) 9856 9966</a></li>
+                <li>Email Me : <a  class = "text-decoration-none" href="mailto:darioprawarawr11.22@ichat.sp.edu.sg">darioprawarawr11.22@ichat.sp.edu.sg</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
